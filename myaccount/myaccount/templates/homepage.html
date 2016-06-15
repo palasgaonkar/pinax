@@ -1,0 +1,79 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}About author{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block body_base %}
+    <section class="jumbotron">
+        <div class="container">
+            {% include "_messages.html" %}
+            <h1>{% blocktrans %}Welcome to Musings{% endblocktrans %}</h1>
+            <p>
+                {% blocktrans %}
+                I am Vishal Palasgoankar. I am a python programmer.
+                Machine learning enthusiast. I dabble in blog writing.
+                {% endblocktrans %}
+            </p>
+            {% if not user.is_authenticated %}
+            {% url "account_login" as login_url %}
+            {% url "account_signup" as signup_url %}
+            <p>{% blocktrans %}You can <a href="{{ login_url }}" class="btn btn-default">Log In</a> or <a href="{{ signup_url }}" class="btn btn-primary">Sign Up</a> to try out the site.{% endblocktrans %}</p>
+            {% endif %}
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <p class="lead text-center">
+                {% blocktrans %}
+                <!--<a href='https://www.goodreads.com/review/list/24512325-vishal-palasgaonkar?shelf=read&amp;utm_medium=api&amp;utm_source=grid_widget' >View my favorite books on goodreads</a>-->
+                <span style="color: #382110"></span>&nbsp;&nbsp;<a href="https://www.goodreads.com/review/list/24512325?shelf=read" title="My favorite books"><img border="0" alt="My favorite books" src="https://www.goodreads.com/images/badge/badge1.jpg"></a>
+                {% endblocktrans %}
+
+                <!--<style>-->
+                    <!--#customize-list{-->
+                    <!--float:left;-->
+                    <!--margin-left:20px;-->
+                    <!--list-style:none;-->
+                    <!--}-->
+                    <!--#gr_updates_widget{-->
+                    <!--float:left;-->
+                    <!--border-radius: 5px;-->
+                    <!--background-color:#fff;-->
+                    <!--border:solid #683205 10px;-->
+                    <!-- -webkit-box-shadow: 0px 0px 4px 1px #595959,-->
+                    <!--inset 0px 0px 0px 1px #7D730B;-->
+                    <!-- -moz-box-shadow: 0px 0px 4px 1px #595959,-->
+                    <!--inset 0px 0px 0px 1px #7D730B;-->
+                    <!--box-shadow: 0px 0px 4px 1px #595959,-->
+                    <!--inset 0px 0px 0px 1px #7D730B;-->
+                    <!--padding:15px 0 0px 15px;-->
+                    <!--width:750px;-->
+                    <!--height:365px;-->
+                    <!--}-->
+                    <!--#gr_footer{-->
+                    <!--margin-bottom:0px;-->
+                    <!--height:30px;-->
+                    <!--}-->
+                    <!--#gr_updates_widget p{-->
+                    <!--padding:0px;-->
+                    <!--margin:0;-->
+                    <!--font-size:14px;-->
+                    <!--}-->
+                    <!--#gr_footer img{-->
+                    <!--width:100px;-->
+                    <!--float:left;-->
+                    <!--}-->
+                <!--</style>-->
+                <!--<div id="gr_updates_widget">-->
+                    <!--<iframe id="the_iframe"-->
+                            <!--src="http://goodreads.com/widgets/user_update_widget?height=400&num_updates=3&user=24512325&width=750"-->
+                            <!--width="648" height="330" frameborder="0"></iframe>-->
+    <!---->
+                <!--</div>-->
+            </p>
+        </div>
+    </section>
+{% endblock %}

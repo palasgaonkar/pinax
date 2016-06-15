@@ -1,0 +1,10 @@
+{% load i18n %}
+
+<div class="fixed">
+    <hr>
+    <footer>
+        <p>&copy; Myself, 2014</p>
+    </footer>
+</div>
+
+{% trans "&copy; 2016 " %}
