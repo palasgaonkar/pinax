@@ -1,0 +1,35 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <option name="myLocal" value="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="19">
+            <item index="0" class="java.lang.String" itemvalue="amqp" />
+            <item index="1" class="java.lang.String" itemvalue="kombu" />
+            <item index="2" class="java.lang.String" itemvalue="mongoengine" />
+            <item index="3" class="java.lang.String" itemvalue="pyodbc" />
+            <item index="4" class="java.lang.String" itemvalue="billiard" />
+            <item index="5" class="java.lang.String" itemvalue="celery" />
+            <item index="6" class="java.lang.String" itemvalue="pytz" />
+            <item index="7" class="java.lang.String" itemvalue="libtiff4-dev" />
+            <item index="8" class="java.lang.String" itemvalue="python-libtiff" />
+            <item index="9" class="java.lang.String" itemvalue="libjpeg-dev" />
+            <item index="10" class="java.lang.String" itemvalue="libtiff" />
+            <item index="11" class="java.lang.String" itemvalue="pylibtiff" />
+            <item index="12" class="java.lang.String" itemvalue="openoffice.org-writer" />
+            <item index="13" class="java.lang.String" itemvalue="libtiff5" />
+            <item index="14" class="java.lang.String" itemvalue="libtiff5-alt-dev" />
+            <item index="15" class="java.lang.String" itemvalue="libtiffxx5" />
+            <item index="16" class="java.lang.String" itemvalue="libtiff-tools" />
+            <item index="17" class="java.lang.String" itemvalue="ghostscr" />
+            <item index="18" class="java.lang.String" itemvalue="libtiff5-dev" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PySingleQuotedDocstringInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+  </profile>
+</component>
