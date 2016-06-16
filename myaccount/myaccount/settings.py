@@ -10,11 +10,11 @@ DEBUG = True
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": "dev.db",
+        "NAME": "/home/palasgaonkar/pinax_site/pinax/myaccount/dev.db",
     }
 }
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["palasgaonkar.pythonanywhere.com"]
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
